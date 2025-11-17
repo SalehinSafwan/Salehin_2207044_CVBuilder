@@ -15,6 +15,8 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import javafx.util.converter.IntegerStringConverter;
 
+import java.util.ArrayList;
+
 public class InfoEntryController {
     @FXML private TextField emailTextField;
     @FXML private TextField phoneTextField;
@@ -120,12 +122,27 @@ public class InfoEntryController {
         phoneTextField.setTextFormatter(numericFormatter);
     }
 
+    @FXML void ShowSucces(){
+        new Alert(Alert.AlertType.INFORMATION,"CV Created successfully!",ButtonType.OK).show();
+    }
+
 
     private void go(ActionEvent event, String fxml){
         try {
-            Parent root = FXMLLoader.load(getClass().getResource(fxml));
+            ShowSucces();
+
+            CVINFO cv = new CVINFO(nameTextField.getText(),phoneTextField.getText(),emailTextField.getText(),addressTextField.getText(),new ArrayList<>(skilltable.getItems()),
+                    new ArrayList<>(edtable.getItems()), new ArrayList<>(worktable.getItems()));
+
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(fxml));
+            Parent root = loader.load();
+
+            PreviewPageController controller = loader.getController();
+            controller.setCVInfo(cv);
+
             Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-            stage.setScene(new Scene(root, 1300,850));
+            stage.setScene(new Scene(root, 700,900));
             stage.setTitle("CV Preview");
             stage.show();
         }

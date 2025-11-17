@@ -10,6 +10,10 @@ public class WorkExperience {
         this.description = description;
     }
 
+    public String toString() {
+        return company + "\t\t"+ timeline + "\n\n" + title + "\n" + description + "\n\n";
+    }
+
     public String getCompany() { return company; }
     public String getTitle() { return title; }
     public String getTimeline() { return timeline; }

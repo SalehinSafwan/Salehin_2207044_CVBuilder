@@ -10,6 +10,12 @@ public class Education {
         this.degree = degree;
         this.cgpa = cgpa;
     }
+
+    public String toString() {
+        return timespan + "\n" + university + "\n" + degree + "\nCGPA: " + cgpa + "\n";
+    }
+
+
     public String getTimespan() {      return timespan;    }
     public String getUniversity() { return university; }
     public String getDegree() { return degree; }

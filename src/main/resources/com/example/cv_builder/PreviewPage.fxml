@@ -1,14 +1,223 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.cv_builder.PreviewPageController"
-            prefHeight="400.0" prefWidth="600.0">
 
-</AnchorPane>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="700.0" style="-fx-background-color: azure;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cv_builder.PreviewPageController">
+   <left>
+      <VBox prefHeight="797.0" prefWidth="264.0" style="-fx-border-color: Brown;" BorderPane.alignment="CENTER">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <HBox prefHeight="41.0" prefWidth="291.0">
+               <children>
+                  <Circle fill="#3d668d" opacity="0.35" radius="11.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="5.0" top="11.0" />
+                     </HBox.margin>
+                  </Circle>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="CONTACT">
+                     <font>
+                        <Font name="Century" size="26.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <Label fx:id="phone" prefHeight="22.0" prefWidth="267.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Artifakt Element Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="email" prefHeight="22.0" prefWidth="267.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Artifakt Element Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="address" prefHeight="22.0" prefWidth="267.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Artifakt Element Bold" size="14.0" />
+               </font>
+            </Label>
+            <Line endX="179.2928924560547" endY="0.20710831880569458" startX="-100.0" stroke="#6a8a61" strokeWidth="3.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Line>
+            <HBox prefHeight="41.0" prefWidth="291.0">
+               <children>
+                  <Circle fill="#cc9a3f" opacity="0.35" radius="11.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="5.0" top="11.0" />
+                     </HBox.margin>
+                  </Circle>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="EDUCATION">
+                     <font>
+                        <Font name="Century" size="26.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <Label fx:id="educationTable" alignment="TOP_LEFT" prefHeight="268.0" prefWidth="264.0">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Line endX="179.2928924560547" endY="0.20710831880569458" startX="-100.0" stroke="#6a8a61" strokeWidth="3.0" />
+            <HBox prefHeight="41.0" prefWidth="291.0">
+               <children>
+                  <Circle fill="#d37168" opacity="0.35" radius="11.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="5.0" top="11.0" />
+                     </HBox.margin>
+                  </Circle>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="SKILLS">
+                     <font>
+                        <Font name="Century" size="26.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <Label fx:id="skillTable" alignment="TOP_LEFT" prefHeight="266.0" prefWidth="281.0">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="797.0" prefWidth="429.0" style="-fx-border-color: Brown;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="41.0" prefWidth="291.0">
+               <children>
+                  <Circle fill="#3abf8c" opacity="0.35" radius="11.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="5.0" top="16.0" />
+                     </HBox.margin>
+                  </Circle>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="PROFILE SUMMARY">
+                     <font>
+                        <Font name="Century" size="26.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <Text stroke="#157bda" strokeType="OUTSIDE" strokeWidth="0.0" text="Fast learner looking for new experiences.  Looking for a challenging environment where my skills could be applied and hopefully I could learn new ones." wrappingWidth="377.13671875">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Nirmala UI" size="19.0" />
+               </font>
+            </Text>
+            <Line endX="311.29290771484375" endY="-0.41421353816986084" startX="-100.0" stroke="#3e5a97" strokeWidth="2.0">
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+            </Line>
+            <HBox prefHeight="61.0" prefWidth="416.0">
+               <children>
+                  <Circle fill="#0577e1" opacity="0.35" radius="11.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="5.0" top="16.0" />
+                     </HBox.margin>
+                  </Circle>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="WORK EXPERIENCE">
+                     <font>
+                        <Font name="Century" size="26.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <Label fx:id="workExperienceTable" alignment="TOP_LEFT" prefHeight="557.0" prefWidth="424.0">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox prefHeight="103.0" prefWidth="700.0" style="-fx-border-color: Brown;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="101.0" prefWidth="744.0">
+               <children>
+                  <Line endX="380.29290771484375" endY="0.09547591209411621" startX="-100.0" stroke="#598653" strokeWidth="2.0">
+                     <VBox.margin>
+                        <Insets left="100.0" top="20.0" />
+                     </VBox.margin>
+                  </Line>
+                  <Label fx:id="name" alignment="CENTER" prefHeight="49.0" prefWidth="368.0" textAlignment="CENTER">
+                     <font>
+                        <Font name="CourierStd-BoldOblique" size="32.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="150.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
