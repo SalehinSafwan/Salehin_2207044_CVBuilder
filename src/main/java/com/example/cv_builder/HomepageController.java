@@ -22,5 +22,6 @@ public class HomepageController {
     }
 
 @FXML void OpenInfoEntryPage (ActionEvent event){go(event, "InfoEntry.fxml");}
+    @FXML void OpenLoadPage (ActionEvent event){go(event, "LoadPage.fxml");}
     @FXML void ExitProgram(ActionEvent event){System.exit(0);}
 }
